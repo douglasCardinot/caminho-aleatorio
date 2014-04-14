@@ -1,5 +1,15 @@
 <?php
 $numberOfSteps = $_GET['numberOfSteps'];
+$numberOfDrunks = $_GET['numberOfDrunks'];
+
+if($numberOfDrunks > 2000){
+	die("Não permitido. Limite máximo de 2000 bêbados");
+}
+
+if($numberOfSteps > pow(10, 4)){
+	die("Não permitido. Limite máximo de ".pow(10, 4)." passos");
+}
+
 $id = $_GET['id'];
 $position = 0;
 $count = 0;

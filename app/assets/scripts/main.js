@@ -3,6 +3,8 @@ var drunks = new Array();
 var numberOfDrunks = 1000;
 var numberOfSteps = 1*Math.pow(10, 4);
 var drunksCompletes = 0;
+var maxDrunks = 2000;
+var maxSteps = 1*Math.pow(10, 4);
 
 function showResult(){
 	
@@ -46,7 +48,8 @@ function stopDrunk(drunk){
 function startDrunk(key, drunk){
 	var data = {
 		'id' : drunk.id,
-		'numberOfSteps' : numberOfSteps
+		'numberOfSteps' : numberOfSteps,
+		'numberOfDrunks' : numberOfDrunks
 	};
 	$.ajax({
 		type: 'get',
@@ -113,21 +116,32 @@ $(document).ready(function(){
 	$("#number-of-drunks").change(function(){
 		$(".group-with-drunks").html("");
 		if(!isNaN($(this).val())){
-			numberOfDrunks = $(this).val();
+			if($(this).val() > maxDrunks){
+				alert("Limite de "+maxDrunks+" bêbados para a simulação");
+				numberOfDrunks = maxDrunks;
+			}else{
+				numberOfDrunks = $(this).val();
+			}
 		}else{
 			numberOfDrunks = 1;
-			$(this).val("1");
 		}
+		$(this).val(numberOfDrunks);
 		openDrunks();
 	});
 
 	$("#number-of-steps").change(function(){
 		if(!isNaN($(this).val())){
-			numberOfSteps = $(this).val();
+			if($(this).val() > maxSteps){
+				alert("Limite de "+maxSteps+" passos para a simulação");
+				numberOfSteps = maxSteps;
+			}else{
+				numberOfSteps = $(this).val();
+			}
 		}else{
 			numberOfSteps = 1;
-			$(this).val("1");
 		}
+
+		$(this).val(numberOfSteps);
 		openDrunks();
 	});
 });
