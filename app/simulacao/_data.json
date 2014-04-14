@@ -1,0 +1,19 @@
+{
+	"title" : "",
+	"description" : "",
+	"keywords" : "",
+	"assets" : {
+		"scripts" : [
+			{
+				"name" : "//google.com/jsapi",
+				"async" : false
+			},
+			{
+				"name" : "main",
+				"async" : false
+			}
+		],
+		"styles" : [],
+		"fonts" : []
+	}
+}

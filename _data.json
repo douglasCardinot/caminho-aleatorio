@@ -1,0 +1,47 @@
+{
+	"developers" : {
+			"designers" : [],
+			"frontenders" : ["Douglas Cardinot"],
+			"backenders" : ["Douglas Cardinot"],
+			"dba's" : [],
+			"testers" : []
+		},
+	"site" : "www.caminhoaleatorio.com.br",
+	"siteName" : "Caminho Aleatório",
+	"title" : "O problema do caminho aleatório",
+	"description" : "",
+	"keywords" : "",
+	"autor" : "Douglas Cardinot",
+	"publisher" : "",
+	"siteVerification" : "",
+	"address" : "",
+	"locality" : "",
+	"classification" : "",
+	"revised" : "",
+	"latitude" : "",
+	"longitude" : "",
+	"lang" : "pt-BR",
+	"appPath" : "app",
+	"assets" : {
+		"scripts" : [
+			{
+				"name" : "lib/bootstrap-3.1.1-dist/js/transition",
+				"async" : true
+			},
+			{
+				"name" : "lib/bootstrap-3.1.1-dist/js/tab",
+				"async" : true
+			},
+			{
+				"name" : "lib/bootstrap-3.1.1-dist/js/carousel",
+				"async" : true
+			},
+			{
+				"name" : "lib/bootstrap-3.1.1-dist/js/dropdown",
+				"async" : true
+			}
+		],
+		"styles" : ["lib/bootstrap-3.1.1-dist/css/bootstrap", "lib/bootstrap-3.1.1-dist/css/carousel", "main", "lib/git-hub/gh-fork-ribbon"],
+		"fonts" : []
+	}
+}
