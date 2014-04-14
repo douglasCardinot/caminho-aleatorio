@@ -1,4 +1,4 @@
-google.load("visualization", "1", {packages:["corechart"]});
+var google;
 var drunks = new Array();
 var numberOfDrunks = 1000;
 var numberOfSteps = 1*Math.pow(10, 4);
@@ -39,6 +39,8 @@ function stopDrunk(drunk){
 		drunksCompletes = 0;
 		showResult();
 	}
+	var fim = $("footer").offset().top;
+	$('body').animate({scrollTop : fim}, 0);
 }
 
 function startDrunk(key, drunk){
@@ -92,6 +94,7 @@ function openDrunks(){
 }
 
 $(document).ready(function(){
+	openDrunks();
 
 	$("#show-result, #show-histogram").hide();
 	$("#number-of-drunks").val(numberOfDrunks);
@@ -127,7 +130,6 @@ $(document).ready(function(){
 		}
 		openDrunks();
 	});
-	openDrunks();
 });
 
 function showHistogram(){
@@ -147,3 +149,5 @@ function showHistogram(){
     var chart = new google.visualization.Histogram(document.getElementById('show-histogram'));
     chart.draw(data, options);
 }
+
+google.load("visualization", "1", {packages:["corechart"]});
