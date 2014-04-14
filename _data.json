@@ -22,6 +22,7 @@
 	"longitude" : "",
 	"lang" : "pt-BR",
 	"appPath" : "app",
+	"analytics" : "UA-50022605-1",
 	"assets" : {
 		"scripts" : [
 			{
