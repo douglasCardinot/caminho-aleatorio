@@ -6,6 +6,10 @@
 	padding-top: 150px;
 }
 
+.featurette{
+	display: table !important;
+}
+
 .nav li img{
 	width: 17px;
 }
