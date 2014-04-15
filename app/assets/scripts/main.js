@@ -64,6 +64,11 @@ function startDrunk(key, drunk){
 		error: function(jqXHR, textStatus, errorThrown){
 			console.log("There's an error: ");
 			console.log(jqXHR);
+			drunksCompletes++;
+			if(drunksCompletes == drunks.length){
+				drunksCompletes = 0;
+				showResult();
+			}
 		}
 	});
 }
