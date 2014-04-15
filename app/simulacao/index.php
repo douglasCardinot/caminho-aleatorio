@@ -1,10 +1,10 @@
 <div class="header">
+	<h3 class="text-muted pull-left">O problema do caminho aleatório: analogia com bêbados</h3>
 	<ul class="nav nav-pills pull-right" id="my-tab">
 		<li class="active"><a href="#home">Simulação</a></li>
 		<li><a href="#config">Configurações</a></li>
 		<li><a href="#" id="start-drunks">Iniciar</a></li>
 	</ul>
-	<h3 class="text-muted">O problema do caminho aleatório: analogia com bêbados</h3>
 </div>
 
 <div class="tab-content">
