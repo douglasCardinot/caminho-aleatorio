@@ -6,10 +6,6 @@
 	padding-top: 150px;
 }
 
-footer .container{
-	margin-top: 40px;
-}
-
 .nav li img{
 	width: 17px;
 }
@@ -22,6 +18,7 @@ footer .container{
 #home{
 	padding: 20px 0px;
 	display: table;
+	clear: both;
 }
 
 #home .result-drunk{
@@ -35,4 +32,13 @@ footer .container{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+}
+
+footer{
+	clear: both;
+}
+
+footer .container{
+	margin-top: 40px;
+	padding: 30px;
 }

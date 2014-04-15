@@ -26,20 +26,8 @@
 	"assets" : {
 		"scripts" : [
 			{
-				"name" : "lib/bootstrap-3.1.1-dist/js/transition",
-				"async" : true
-			},
-			{
 				"name" : "lib/bootstrap-3.1.1-dist/js/tab",
-				"async" : true
-			},
-			{
-				"name" : "lib/bootstrap-3.1.1-dist/js/carousel",
-				"async" : true
-			},
-			{
-				"name" : "lib/bootstrap-3.1.1-dist/js/dropdown",
-				"async" : true
+				"async" : false
 			}
 		],
 		"styles" : ["lib/bootstrap-3.1.1-dist/css/bootstrap", "lib/bootstrap-3.1.1-dist/css/carousel", "main", "lib/git-hub/gh-fork-ribbon"],

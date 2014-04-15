@@ -5,9 +5,13 @@ var numberOfSteps = 1*Math.pow(10, 4);
 var drunksCompletes = 0;
 var maxDrunks = 2000;
 var maxSteps = 1*Math.pow(10, 4);
+var timeControll = null;
+var secondsWaitNewDrunkResponse = 10;
 
 function showResult(){
 	
+	clearTimeout(timeControll);
+
 	var sum = 0;
 	$.each(drunks, function(index, drunk){
 		sum += drunk.position;
@@ -69,6 +73,12 @@ function startDrunk(key, drunk){
 				drunksCompletes = 0;
 				showResult();
 			}
+		},
+		complete: function(jqXHR, textStatus){
+			clearTimeout(timeControll);
+			timeControll = window.setTimeout(function(){
+				showResult();
+			}, 1000*secondsWaitNewDrunkResponse);
 		}
 	});
 }
