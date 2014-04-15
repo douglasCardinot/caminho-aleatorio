@@ -1,6 +1,6 @@
 var google;
 var drunks = new Array();
-var numberOfDrunks = 1000;
+var numberOfDrunks = 500;
 var numberOfSteps = 1*Math.pow(10, 4);
 var drunksCompletes = 0;
 var maxDrunks = 2000;
