@@ -25,10 +25,7 @@
 	"analytics" : "UA-50022605-1",
 	"assets" : {
 		"scripts" : [
-			{
-				"name" : "lib/bootstrap-3.1.1-dist/js/tab",
-				"async" : false
-			}
+			
 		],
 		"styles" : ["lib/bootstrap-3.1.1-dist/css/bootstrap", "lib/bootstrap-3.1.1-dist/css/carousel", "main", "lib/git-hub/gh-fork-ribbon"],
 		"fonts" : []
