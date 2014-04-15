@@ -5,6 +5,10 @@
 	"assets" : {
 		"scripts" : [
 			{
+				"name" : "lib/bootstrap-3.1.1-dist/js/tab",
+				"async" : false
+			},
+			{
 				"name" : "//google.com/jsapi",
 				"async" : false
 			},
