@@ -1,6 +1,10 @@
 <?php
 	$_ = new stdClass();
-	$_->raiz = substr($_SERVER['DOCUMENT_ROOT'], 0, -1);
+
+	if(substr($_SERVER['DOCUMENT_ROOT'], -1) == '/')
+		$_->raiz = substr($_SERVER['DOCUMENT_ROOT'], 0, -1);
+	else $_->raiz = $_SERVER['DOCUMENT_ROOT'];
+
 	if(file_exists($_->raiz."/util/autoload.php"))
 		include_once($_->raiz."/util/autoload.php");
 	if(file_exists($_->raiz."/util/autoload.php"))
@@ -9,7 +13,7 @@
 	$url = $_->raiz."/_data.json";
     $json = file_get_contents($url);
     $_data = json_decode($json, TRUE);
-    if(json_last_error() != JSON_ERROR_NONE){
+    if(function_exists("json_last_error") && json_last_error() != JSON_ERROR_NONE){
 		throw new LogicException("O JSON _data contém um erro");
 	}
    	foreach($_data as $key => $d){
