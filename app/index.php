@@ -19,10 +19,10 @@
 			além de permitir acesso e simulação aos objetos de pesquisa para outros pesquisadores. 
 			<br>O projeto e open source e você pode contribuir para ele acessando o <a href="https://github.com/douglasCardinot/caminho-aleatorio" target="_blank">GitHub</a>
 		</p>
-		<p><a class="btn btn-default" href="/sobre" role="button">Sobre &raquo;</a></p>
+		<!-- <p><a class="btn btn-default" href="/sobre" role="button">Sobre &raquo;</a></p> -->
 	</div>
 	<div class="col-lg-4">
-		<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+		<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image" style="height: 97px; width: 300px;">
 		<h2>A pesquisa</h2>
 		<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 	</div>
