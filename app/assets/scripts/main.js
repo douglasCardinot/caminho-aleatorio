@@ -172,7 +172,7 @@ function showHistogram(){
     var options = {
       title: 'Posição final do bêbados',
       legend: { position: 'none' },
-  	  histogram: { bucketSize: 50 }
+  	  histogram: { bucketSize: 25 }
     };
 
     var chart = new google.visualization.Histogram(document.getElementById('show-histogram'));

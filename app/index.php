@@ -10,7 +10,18 @@
 		<p><a class="btn btn-default" href="/simulacao" role="button">Simulação &raquo;</a></p>
 	</div>
 	<div class="col-lg-4">
-		<img class="img-circle" src="/app/assets/images/o-projeto.png" alt="O projeto">
+		<div style="height: 100px;">&nbsp;</div>
+		<!-- <img class="img-icon" src="/app/assets/images/a-pesquisa.png" alt="A pesquisa"> -->
+		<h2>A pesquisa</h2>
+		<p>
+			Utilizando o livro de A.-L Barabási intitulado <b>Fractal concepts in surface growth</b> (ou Concepções de fractais em crescimento de superfícies), o projeto
+			consiste no estudo, compreendimento teórico, análise e levantamento de dados no que diz respeito ao crescimento de superfícies.<br />
+			Com uma análise de situações aparentemente randômicas como os crescimentos de superfícies, espera-se analizar as influências do estudo da aleatoriedade
+			no contexto do micro e do macro, levantando as relações entre ambas e nas condições de cada.
+		</p>
+	</div>
+	<div class="col-lg-4">
+		<img class="img-icon" src="/app/assets/images/o-projeto.png" alt="O projeto">
 		<h2>O projeto</h2>
 		<p>
 			O projeto de iniciação científica é realizado por mim, Douglas Cardinot, juntamente ao professor Leonardo Grigório pelo CEFET-NF
@@ -19,12 +30,7 @@
 			além de permitir acesso e simulação aos objetos de pesquisa para outros pesquisadores. 
 			<br>O projeto e open source e você pode contribuir para ele acessando o <a href="https://github.com/douglasCardinot/caminho-aleatorio" target="_blank">GitHub</a>
 		</p>
-		<p><a class="btn btn-default" href="/sobre" role="button">Sobre &raquo;</a></p>
-	</div>
-	<div class="col-lg-4">
-		<img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-		<h2>A pesquisa</h2>
-		<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		<!-- <p><a class="btn btn-default" href="/sobre" role="button">Sobre &raquo;</a></p> -->
 	</div>
 </div>
 
